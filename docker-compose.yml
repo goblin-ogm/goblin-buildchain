@@ -1,7 +1,7 @@
 version: '3'
 services:
-  sphinx-builder:
-    container_name: sphinx_build
-    image: 'goblinogm/sphinx-builder:latest'
+  goblin-buildchain:
+    container_name: goblin_build
+    image: 'goblinogm/goblin-buildchain:latest'
     build:
       context: .

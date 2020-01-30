@@ -6,7 +6,7 @@ MAINTAINER jeffrey.freeman@syncleus.com
 # and then remove the build tools to minimize image size
 # (buildDeps are removed, deps are kept)
 RUN set -ex \
-    && apt-get update && apt-get install -y build-essential --no-install-recommends && rm -rf /var/lib/apt/lists/* \
+    && apt-get update && apt-get install -y build-essential git --no-install-recommends && rm -rf /var/lib/apt/lists/* \
     && pip install --upgrade pip \
     && pip install sphinx \
     && find /usr/local -depth \

@@ -2,6 +2,6 @@ version: '3'
 services:
   goblin-buildchain:
     container_name: goblin_build
-    image: 'goblinogm/goblin-buildchain:latest'
+    image: 'goblinogm/goblin-buildchain:latest-py3.8'
     build:
       context: .
